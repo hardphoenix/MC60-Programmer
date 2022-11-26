@@ -1,0 +1,17 @@
+[
+{
+  "directory": "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\mtkflasher.dir\\main.c.obj -c D:\\_Prj\\Test_Code\\MC60_Prog\\MediaTekFlasher-master\\main.c",
+  "file": "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/main.c"
+},
+{
+  "directory": "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/build/Flasher",
+  "command": "C:\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\FLASHER.dir\\flasher.c.obj -c D:\\_Prj\\Test_Code\\MC60_Prog\\MediaTekFlasher-master\\Flasher\\flasher.c",
+  "file": "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/Flasher/flasher.c"
+},
+{
+  "directory": "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/build/Flasher",
+  "command": "C:\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\SERIAL.dir\\Serial.c.obj -c D:\\_Prj\\Test_Code\\MC60_Prog\\MediaTekFlasher-master\\Flasher\\Serial.c",
+  "file": "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/Flasher/Serial.c"
+}
+]
