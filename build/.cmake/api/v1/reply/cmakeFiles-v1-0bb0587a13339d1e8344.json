@@ -190,8 +190,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/build",
-		"source" : "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master"
+		"build" : "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher/build",
+		"source" : "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher"
 	},
 	"version" : 
 	{

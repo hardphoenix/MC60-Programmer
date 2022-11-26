@@ -1,6 +1,6 @@
 Flasher/CMakeFiles/SERIAL.dir/Serial.c.obj: \
- D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\Flasher\Serial.c \
- D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\Flasher\Serial.h \
+ D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\Flasher\Serial.c \
+ D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\Flasher\Serial.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \

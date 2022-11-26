@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/main.c" "CMakeFiles/mtkflasher.dir/main.c.obj" "gcc" "CMakeFiles/mtkflasher.dir/main.c.obj.d"
+  "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher/main.c" "CMakeFiles/mtkflasher.dir/main.c.obj" "gcc" "CMakeFiles/mtkflasher.dir/main.c.obj.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/build/Flasher/CMakeFiles/FLASHER.dir/DependInfo.cmake"
-  "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/build/Flasher/CMakeFiles/SERIAL.dir/DependInfo.cmake"
+  "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher/build/Flasher/CMakeFiles/FLASHER.dir/DependInfo.cmake"
+  "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher/build/Flasher/CMakeFiles/SERIAL.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

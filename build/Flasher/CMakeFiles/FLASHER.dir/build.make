@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master
+CMAKE_SOURCE_DIR = D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build
+CMAKE_BINARY_DIR = D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build
 
 # Include any dependencies generated for this target.
 include Flasher/CMakeFiles/FLASHER.dir/depend.make
@@ -69,18 +69,18 @@ include Flasher/CMakeFiles/FLASHER.dir/progress.make
 include Flasher/CMakeFiles/FLASHER.dir/flags.make
 
 Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj: Flasher/CMakeFiles/FLASHER.dir/flags.make
-Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj: D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/Flasher/flasher.c
+Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj: D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher/Flasher/flasher.c
 Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj: Flasher/CMakeFiles/FLASHER.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj"
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\Flasher && C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj -MF CMakeFiles\FLASHER.dir\flasher.c.obj.d -o CMakeFiles\FLASHER.dir\flasher.c.obj -c D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\Flasher\flasher.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj"
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\Flasher && C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj -MF CMakeFiles\FLASHER.dir\flasher.c.obj.d -o CMakeFiles\FLASHER.dir\flasher.c.obj -c D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\Flasher\flasher.c
 
 Flasher/CMakeFiles/FLASHER.dir/flasher.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FLASHER.dir/flasher.c.i"
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\Flasher && C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\Flasher\flasher.c > CMakeFiles\FLASHER.dir\flasher.c.i
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\Flasher && C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\Flasher\flasher.c > CMakeFiles\FLASHER.dir\flasher.c.i
 
 Flasher/CMakeFiles/FLASHER.dir/flasher.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FLASHER.dir/flasher.c.s"
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\Flasher && C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\Flasher\flasher.c -o CMakeFiles\FLASHER.dir\flasher.c.s
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\Flasher && C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\Flasher\flasher.c -o CMakeFiles\FLASHER.dir\flasher.c.s
 
 # Object files for target FLASHER
 FLASHER_OBJECTS = \
@@ -92,19 +92,19 @@ FLASHER_EXTERNAL_OBJECTS =
 Flasher/libFLASHER.a: Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj
 Flasher/libFLASHER.a: Flasher/CMakeFiles/FLASHER.dir/build.make
 Flasher/libFLASHER.a: Flasher/CMakeFiles/FLASHER.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libFLASHER.a"
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\Flasher && $(CMAKE_COMMAND) -P CMakeFiles\FLASHER.dir\cmake_clean_target.cmake
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\Flasher && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\FLASHER.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libFLASHER.a"
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\Flasher && $(CMAKE_COMMAND) -P CMakeFiles\FLASHER.dir\cmake_clean_target.cmake
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\Flasher && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\FLASHER.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Flasher/CMakeFiles/FLASHER.dir/build: Flasher/libFLASHER.a
 .PHONY : Flasher/CMakeFiles/FLASHER.dir/build
 
 Flasher/CMakeFiles/FLASHER.dir/clean:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\Flasher && $(CMAKE_COMMAND) -P CMakeFiles\FLASHER.dir\cmake_clean.cmake
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\Flasher && $(CMAKE_COMMAND) -P CMakeFiles\FLASHER.dir\cmake_clean.cmake
 .PHONY : Flasher/CMakeFiles/FLASHER.dir/clean
 
 Flasher/CMakeFiles/FLASHER.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\Flasher D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\Flasher D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\Flasher\CMakeFiles\FLASHER.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\Flasher D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\Flasher D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\Flasher\CMakeFiles\FLASHER.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Flasher/CMakeFiles/FLASHER.dir/depend
 

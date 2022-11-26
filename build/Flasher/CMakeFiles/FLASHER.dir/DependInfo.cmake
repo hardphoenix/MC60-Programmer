@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/Flasher/flasher.c" "Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj" "gcc" "Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj.d"
+  "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher/Flasher/flasher.c" "Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj" "gcc" "Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj.d"
   )
 
 # Targets to which this target links.

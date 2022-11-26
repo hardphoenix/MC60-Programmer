@@ -1,4 +1,4 @@
-# Install script for directory: D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/Flasher
+# Install script for directory: D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher/Flasher
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

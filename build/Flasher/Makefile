@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master
+CMAKE_SOURCE_DIR = D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build
+CMAKE_BINARY_DIR = D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/build/CPackSourceConfig.cmake
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -116,14 +116,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\CMakeFiles D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\Flasher\\CMakeFiles\progress.marks
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Flasher/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\CMakeFiles 0
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\CMakeFiles D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\Flasher\\CMakeFiles\progress.marks
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Flasher/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Flasher/clean
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Flasher/clean
 .PHONY : clean
 
 # The main clean target
@@ -132,22 +132,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Flasher/preinstall
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Flasher/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Flasher/preinstall
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Flasher/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Flasher/CMakeFiles/FLASHER.dir/rule:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Flasher/CMakeFiles/FLASHER.dir/rule
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Flasher/CMakeFiles/FLASHER.dir/rule
 .PHONY : Flasher/CMakeFiles/FLASHER.dir/rule
 
 # Convenience name for target.
@@ -156,12 +156,12 @@ FLASHER: Flasher/CMakeFiles/FLASHER.dir/rule
 
 # fast build rule for target.
 FLASHER/fast:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\FLASHER.dir\build.make Flasher/CMakeFiles/FLASHER.dir/build
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\FLASHER.dir\build.make Flasher/CMakeFiles/FLASHER.dir/build
 .PHONY : FLASHER/fast
 
 # Convenience name for target.
 Flasher/CMakeFiles/SERIAL.dir/rule:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Flasher/CMakeFiles/SERIAL.dir/rule
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Flasher/CMakeFiles/SERIAL.dir/rule
 .PHONY : Flasher/CMakeFiles/SERIAL.dir/rule
 
 # Convenience name for target.
@@ -170,7 +170,7 @@ SERIAL: Flasher/CMakeFiles/SERIAL.dir/rule
 
 # fast build rule for target.
 SERIAL/fast:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\SERIAL.dir\build.make Flasher/CMakeFiles/SERIAL.dir/build
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\SERIAL.dir\build.make Flasher/CMakeFiles/SERIAL.dir/build
 .PHONY : SERIAL/fast
 
 Serial.obj: Serial.c.obj
@@ -178,7 +178,7 @@ Serial.obj: Serial.c.obj
 
 # target to build an object file
 Serial.c.obj:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\SERIAL.dir\build.make Flasher/CMakeFiles/SERIAL.dir/Serial.c.obj
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\SERIAL.dir\build.make Flasher/CMakeFiles/SERIAL.dir/Serial.c.obj
 .PHONY : Serial.c.obj
 
 Serial.i: Serial.c.i
@@ -186,7 +186,7 @@ Serial.i: Serial.c.i
 
 # target to preprocess a source file
 Serial.c.i:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\SERIAL.dir\build.make Flasher/CMakeFiles/SERIAL.dir/Serial.c.i
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\SERIAL.dir\build.make Flasher/CMakeFiles/SERIAL.dir/Serial.c.i
 .PHONY : Serial.c.i
 
 Serial.s: Serial.c.s
@@ -194,7 +194,7 @@ Serial.s: Serial.c.s
 
 # target to generate assembly for a file
 Serial.c.s:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\SERIAL.dir\build.make Flasher/CMakeFiles/SERIAL.dir/Serial.c.s
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\SERIAL.dir\build.make Flasher/CMakeFiles/SERIAL.dir/Serial.c.s
 .PHONY : Serial.c.s
 
 flasher.obj: flasher.c.obj
@@ -202,7 +202,7 @@ flasher.obj: flasher.c.obj
 
 # target to build an object file
 flasher.c.obj:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\FLASHER.dir\build.make Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\FLASHER.dir\build.make Flasher/CMakeFiles/FLASHER.dir/flasher.c.obj
 .PHONY : flasher.c.obj
 
 flasher.i: flasher.c.i
@@ -210,7 +210,7 @@ flasher.i: flasher.c.i
 
 # target to preprocess a source file
 flasher.c.i:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\FLASHER.dir\build.make Flasher/CMakeFiles/FLASHER.dir/flasher.c.i
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\FLASHER.dir\build.make Flasher/CMakeFiles/FLASHER.dir/flasher.c.i
 .PHONY : flasher.c.i
 
 flasher.s: flasher.c.s
@@ -218,7 +218,7 @@ flasher.s: flasher.c.s
 
 # target to generate assembly for a file
 flasher.c.s:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\FLASHER.dir\build.make Flasher/CMakeFiles/FLASHER.dir/flasher.c.s
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(MAKE) $(MAKESILENT) -f Flasher\CMakeFiles\FLASHER.dir\build.make Flasher/CMakeFiles/FLASHER.dir/flasher.c.s
 .PHONY : flasher.c.s
 
 # Help Target
@@ -251,6 +251,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

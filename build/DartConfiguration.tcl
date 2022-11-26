@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master
-BuildDirectory: D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/build
+SourceDirectory: D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher
+BuildDirectory: D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master"
+ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher"
 MakeCommand: C:/Program\ Files/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
@@ -45,7 +45,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: 
+GITCommand: C:/Program Files/Git/cmd/git.exe
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -58,9 +58,9 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: 
+UpdateCommand: C:/Program Files/Git/cmd/git.exe
 UpdateOptions: 
-UpdateType: 
+UpdateType: git
 
 # Compiler info
 Compiler: C:/mingw64/bin/g++.exe

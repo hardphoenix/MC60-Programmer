@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master
+CMAKE_SOURCE_DIR = D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build
+CMAKE_BINARY_DIR = D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build
 
 # Utility rule file for NightlyMemoryCheck.
 
@@ -81,6 +81,6 @@ CMakeFiles/NightlyMemoryCheck.dir/clean:
 .PHONY : CMakeFiles/NightlyMemoryCheck.dir/clean
 
 CMakeFiles/NightlyMemoryCheck.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\build\CMakeFiles\NightlyMemoryCheck.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\build\CMakeFiles\NightlyMemoryCheck.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NightlyMemoryCheck.dir/depend
 

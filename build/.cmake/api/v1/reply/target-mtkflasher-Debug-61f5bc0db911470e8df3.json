@@ -59,11 +59,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "FLASHER::@fedd1d89c2171c6f5f99"
+			"id" : "SERIAL::@fedd1d89c2171c6f5f99"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "SERIAL::@fedd1d89c2171c6f5f99"
+			"id" : "FLASHER::@fedd1d89c2171c6f5f99"
 		}
 	],
 	"id" : "mtkflasher::@6890427a1f51a3e7e1df",

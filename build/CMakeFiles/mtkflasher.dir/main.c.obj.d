@@ -1,6 +1,6 @@
 CMakeFiles/mtkflasher.dir/main.c.obj: \
- D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\main.c \
- D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\Flasher/flasher.h \
+ D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\main.c \
+ D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\Flasher/flasher.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
@@ -21,7 +21,7 @@ CMakeFiles/mtkflasher.dir/main.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
  C:/mingw64/x86_64-w64-mingw32/include/string.h \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher-master\Flasher/Serial.h \
+ D:\_Prj\Test_Code\MC60_Prog\MediaTekFlasher\Flasher/Serial.h \
  C:/mingw64/x86_64-w64-mingw32/include/windows.h \
  C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
  C:/mingw64/x86_64-w64-mingw32/include/excpt.h \

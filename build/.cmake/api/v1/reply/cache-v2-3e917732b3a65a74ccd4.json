@@ -83,7 +83,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/build"
+			"value" : "d:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -619,7 +619,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/build/CMakeFiles/pkgRedirects"
+			"value" : "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -691,7 +691,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master"
+			"value" : "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1611,11 +1611,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "(This variable does not exist and should not be used)"
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : ""
+			"type" : "FILEPATH",
+			"value" : "C:/Program Files/Git/cmd/git.exe"
 		},
 		{
 			"name" : "HGCOMMAND",
@@ -1751,7 +1751,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master/build"
+			"value" : "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher/build"
 		},
 		{
 			"name" : "mtkflasher_IS_TOP_LEVEL",
@@ -1775,7 +1775,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher-master"
+			"value" : "D:/_Prj/Test_Code/MC60_Prog/MediaTekFlasher"
 		}
 	],
 	"kind" : "cache",
