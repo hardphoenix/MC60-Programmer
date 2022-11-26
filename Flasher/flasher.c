@@ -5,6 +5,7 @@ void flash_prog_reset(flash_progrssbar_t *prog);
 void flash_progress_print(const char *format, uint16_t count, char tag);
 void flash_progressbar_update(flash_progrssbar_t *prg, uint32_t now_size);
 
+bool flash_load_da_frimware(flash_data_t *flash, char *path);
 result_t flash_connect(flash_data_t *flash);
 result_t flash_da_start(flash_data_t *flash);
 result_t flash_send_flashinfo(flash_data_t *flash, uint32_t offset);
@@ -920,22 +921,46 @@ result_t flash_da_finish(flash_data_t *flash)
     uint8_t buf[4];
     flash_memset(buf, 0, sizeof(buf));
     buf[0] = DA_FINISH;
-    flash_send(flash, &buf[0], 1, 1, 0); // ack
+    flash_send(flash, &buf[0], 1, 1, 10); // ack
     buf[0] = 0;
-    flash_send(flash, &buf[0], 4, 1, 0); // nack
+    flash_send(flash, &buf[0], 4, 1, 10); // nack
 
     return f_res_ok;
 }
 
 result_t flash_format_fat(flash_data_t *flash)
 {
+
+    return f_res_ok;
 }
 
 result_t flash_da_reset(flash_data_t *flash)
 {
+    uint8_t buf[10];
+    uint8_t *rp = NULL;
+    uint16_t idx=0;
+    flash_memset(buf, 0, sizeof(buf));
+    buf[0]= DA_CLEAR_POWERKEY_IN_META_MODE_CMD;
+    rp = flash_send(flash, &buf[0], 1, 1 , 10);
+    buf[idx++]= 0xC9;
+    buf[idx++]= 0x00;
+    rp = NULL;
+    rp = flash_send(flash, &buf[0], idx, 1, 10);
+    rp = NULL;
+    buf[idx++] = DA_ENABLE_WATCHDOG_CMD;
+    buf[idx++] = 0x01;
+    buf[idx++] = 0x40;
+    buf[idx++] = 0x00;
+    buf[idx++] = 0x00;
+    buf[idx++] = 0x00;
+    buf[idx++] = 0x00;
+    rp = flash_send(flash, &buf[0], idx, 1, 10);
+
+
+    return f_res_ok;
 }
 
-result_t flash_upload_app(flash_data_t *flash, const char *com_name, serial_buad select_buadrate, uint16_t timeout, bool opt, bool reset_after_flash, uint8_t *path_fw)
+result_t flash_upload_app(flash_data_t *flash, const char *com_name, serial_buad select_buadrate, uint16_t timeout, bool reset_after_flash, uint8_t *path_fw)
 {
     result_t fres;
     serial_result sres;
@@ -967,13 +992,13 @@ result_t flash_upload_app(flash_data_t *flash, const char *com_name, serial_buad
     if (fres != f_res_ok)
         return fres;
 
-    if (opt == 0)
-    {
-        fres = flash_format_fat(flash);
-        if (fres != f_res_ok)
-            return fres;
-    }
-    if (!reset_after_flash) // TAG No Need reset cpu after flash done
+    // if (opt == 0)
+    // {
+    //     fres = flash_format_fat(flash);
+    //     if (fres != f_res_ok)
+    //         return fres;
+    // }
+    if (reset_after_flash == 0) // TAG No Need reset cpu after flash done
     {
         fres = flash_da_finish(flash);
         if (fres != f_res_ok)
@@ -993,3 +1018,4 @@ result_t flash_upload_app(flash_data_t *flash, const char *com_name, serial_buad
     if (sres != ser_ok)
         return f_res_com_close_err;
 }
+

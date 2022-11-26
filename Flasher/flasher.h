@@ -160,7 +160,7 @@ typedef struct
 void flash_Error(void *msg);
 void flash_Assert(int err_id, void *msg);
 
-bool flash_load_da_frimware(flash_data_t *flash, char *path);
-result_t flash_upload_app(flash_data_t *flash, const char *com_name, serial_buad select_buadrate, uint16_t timeout, bool opt, bool reset_after_flash, uint8_t *path_fw);
+
+result_t flash_upload_app(flash_data_t *flash, const char *com_name, serial_buad select_buadrate, uint16_t timeout, bool reset_after_flash, uint8_t *path_fw);
 
 #endif /*FLASHER_H*/

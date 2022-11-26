@@ -11,9 +11,9 @@ int main(void)
     // }
 
     flash_data_t flash={0};
-    flash_upload_app(&flash, (const char *)"COM14", (serial_buad)serial_buad_921600, 30, 0, 0,"C:\\Users\\Taheri\\Desktop\\V111\\V111\\MC60_AVLHDR.bin");
+    flash_upload_app(&flash, (const char *)"COM14", (serial_buad)serial_buad_921600, 15, TRUE,"C:\\Users\\Taheri\\Desktop\\V111\\V111\\MC60_AVLHDR.bin");
     uint32_t tx_sended=0, rx_recived=0;
-    
+
     // char buffer[128];
     // char rx_buffer[128];
     // uint32_t rx_index = (sizeof(rx_buffer) - 1);
