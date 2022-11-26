@@ -973,20 +973,19 @@ result_t flash_upload_app(flash_data_t *flash, const char *com_name, serial_buad
         if (fres != f_res_ok)
             return fres;
     }
-    if (!reset_after_flash)     //TAG No Need reset cpu after flash done
+    if (!reset_after_flash) // TAG No Need reset cpu after flash done
     {
         fres = flash_da_finish(flash);
         if (fres != f_res_ok)
             return fres;
     }
-    else 
+    else
     {
-        //TAG reset cpu after flash done
+        // TAG reset cpu after flash done
         fres = flash_da_reset(flash);
-        if(fres != f_res_ok)
+        if (fres != f_res_ok)
             return fres;
     }
-
     debug("\n[Flash Complate]");
 
     // TODO: after complate code upload close com port
