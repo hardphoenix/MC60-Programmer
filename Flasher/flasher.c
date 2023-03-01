@@ -515,7 +515,7 @@ result_t flash_send_flashinfo(flash_data_t *flash, uint32_t offset)
         }
         else if (rb[0] != RD_CONF)
         {
-            return f_res_ok;
+            return f_res_err;
         }
     }
     return f_res_ok;
