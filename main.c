@@ -29,7 +29,7 @@ int main(void)
             //debug("\nSend %d :%s",tx_sended,buffer);
             // rx_recived = serial_read(&flash.serial,rx_buffer,1);
             // debug("\nRx %d :%s",rx_recived,rx_buffer);
-            Sleep(1);
+            //Sleep(1);
         //}
         // flash_com_read(&flash,rx_buffer,3);
 
@@ -42,7 +42,7 @@ int main(void)
     //}
     // serial_close(&flash.serial);
     // getchar();
-    exit(10);
+    //exit(10);
 
     return 10;
 }
