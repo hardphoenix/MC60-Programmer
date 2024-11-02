@@ -18,10 +18,10 @@ int main(void)
     // char rx_buffer[128];
     // uint32_t rx_index = (sizeof(rx_buffer) - 1);
     // buffer[0]= RD_CONF;
-    if (flash.serial.com_open)
-    {
-        for(uint16_t i=0;i<1000;i++)
-        {
+    //if (flash.serial.com_open)
+    //{
+        //for(uint16_t i=0;i<1000;i++)
+        //{
             // memset(buffer,0,sizeof(buffer));
             // sprintf(buffer,"Flash com Write %d\r\n",i);
             // tx_sended = serial_write(&flash.serial,&buffer[0],1);   //&buffer[0]
@@ -30,7 +30,7 @@ int main(void)
             // rx_recived = serial_read(&flash.serial,rx_buffer,1);
             // debug("\nRx %d :%s",rx_recived,rx_buffer);
             Sleep(1);
-        }
+        //}
         // flash_com_read(&flash,rx_buffer,3);
 
         // while (1)
@@ -39,7 +39,7 @@ int main(void)
         //     rx_recived = serial_read((serial_data_t*)&flash.serial, rx_buffer, 3);
         //     debug("\nrx [%d]:%s",rx_recived,rx_buffer);
         // }
-    }
+    //}
     // serial_close(&flash.serial);
     // getchar();
     exit(10);
