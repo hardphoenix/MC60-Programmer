@@ -1,6 +1,8 @@
 # MediaTekFlasher
-MT6261 SOC Programmer.
-Quectel MC60 Module Programmer.
+MT6261 Programmer.
+Chip on MC60 Module
+##
+Quectel MC60 Programmer.
 Pure C Code.
 Generated Wirh CMAKE
 
