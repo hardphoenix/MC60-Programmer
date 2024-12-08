@@ -1,4 +1,4 @@
-# MediaTekFlasher
+# MediaTek MT6261 Flasher
 MT6261 Programmer.
 Chip on MC60 Module
 ##
