@@ -43,7 +43,7 @@ Ensure the following tools are installed on your system:
 1. Connect your device with the **MT6261 processor** to your PC.
 2. Execute the program:
    ```bash
-   ./mc60_programmer
+   ./mtkflasher
    ```
 3. Follow the on-screen instructions to program and configure the device.
 
