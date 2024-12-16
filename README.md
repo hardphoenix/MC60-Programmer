@@ -15,7 +15,7 @@
 
 ### Prerequisites
 Ensure the following tools are installed on your system:
-- **CMake** (version 3.10 or higher)
+- **CMake** (version 3.0 or higher)
 - A compatible **C compiler** (e.g., GCC, Clang, or MSVC)
 
 ### Building the Project
