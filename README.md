@@ -22,7 +22,7 @@ Ensure the following tools are installed on your system:
 1. Clone the repository:
    ```bash
    git clone https://github.com/hardphoenix/MC60_Programmer_C.git
-   cd MC60_Programmer
+   cd MC60_Programmer_C
    ```
 2. Create a build directory and configure the project using CMake:
    ```bash
