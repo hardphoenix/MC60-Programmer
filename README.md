@@ -21,7 +21,7 @@ Ensure the following tools are installed on your system:
 ### Building the Project
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/hardphoenix/MC60_Programmer_C.git
    cd MC60_Programmer
    ```
 2. Create a build directory and configure the project using CMake:
