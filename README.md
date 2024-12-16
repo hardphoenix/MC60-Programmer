@@ -21,8 +21,8 @@ Ensure the following tools are installed on your system:
 ### Building the Project
 1. Clone the repository:
    ```bash
-   git clone https://github.com/hardphoenix/MC60_Programmer_C.git
-   cd MC60_Programmer_C
+   git clone <repository_url>
+   cd MC60_Programmer
    ```
 2. Create a build directory and configure the project using CMake:
    ```bash
@@ -34,6 +34,10 @@ Ensure the following tools are installed on your system:
    ```bash
    cmake --build .
    ```
+4. Copy mt6261_da.bin from MT6261_DA Directory Into: build Directory.
+   ```bash
+   cp MT6261_DA/mt6261_da.bin build/
+   ```
 
 ### Running the Program
 1. Connect your device with the **MT6261 processor** to your PC.
@@ -43,9 +47,36 @@ Ensure the following tools are installed on your system:
    ```
 3. Follow the on-screen instructions to program and configure the device.
 
+## Example Usage
+The following example demonstrates how to use the library in your `main.c` file:
 
-# Help 
-## The "mt6261_da.bin"  file must be in the path of the executable file
+```c
+#include "Flasher/flasher.h"
+
+int main(void)
+{
+    flash_data_t flash={0};
+
+    /**
+     * @Help
+     * COM5 Is a simple Test You Can Input Your Input
+     * 
+     * SerialBuad Rate 921600 You Can Select From This List:
+     *          serial_buad_921600
+     *          serial_buad_460800
+     *          serial_buad_230400
+     *          serial_buad_115200
+     * 
+     * TimeOut :15 Second (From 1 to 200 Second)
+     * Reset After End Programmed Flash : True
+     * Path Of Your MT6261(MC60) BinaryFile: "C:\\Desktop\\MC60_AVLHDR.bin" (You Must input Your *Bin path)
+     */
+    flash_upload_app(&flash, (const char *)"COM5", (serial_buad)serial_buad_921600, 15, TRUE, "C:\\Desktop\\MC60_AVLHDR.bin");
+    uint32_t tx_sended=0, rx_recived=0;
+
+    return 10;
+}
+```
 
 ## Contribution
 We welcome contributions to this project! Feel free to fork the repository, make changes, and submit a pull request. Suggestions for improvements or feature requests are also appreciated.

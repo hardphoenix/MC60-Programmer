@@ -1,9 +1,5 @@
-#mtkflasher library code 
-#
-
 cmake_minimum_required(VERSION 3.0.0)
 
-#set name and directory
 set(PRJ_NAME
 mtkflasher)
 
@@ -16,7 +12,6 @@ FLASHER)
 set(LIB_SERIAL
 SERIAL)
 
-#prj
 project(${PRJ_NAME} VERSION 0.1.0)
 
 
